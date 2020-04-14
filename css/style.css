@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#lista {
+  position: absolute;
+  font-family: 'Cabin', sans-serif;
+}
+
+.Blocco {
+  background-color: white;
+  position:relative;
+  top: 100%;
+  left: 75vh;
+  width: 400px;
+  height: 400px;
+  z-index: 0;
+}
+.Roma {
+  background-image: url(../img/Roma.jpg);
+  background-size: cover;
+
+}
+.Tokyo {
+  background-image: url(../img/Tokyo.jpg);
+  background-size: cover;
+
+}
+.NewYork{
+  background-image: url(../img/NewYork.jpg);
+  background-size: cover;
+
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  z-index: 1;
+}
+
+h1 {
+  position: absolute;
+  font-size: 200%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+}
+
+.Blocco:hover > .overlay {
+  opacity: 0;
+}
+.Blocco:hover > h1 {
+  font-size: 250%;
+  text-shadow: 2px 2px black;
+  text-decoration: underline #ce4444;
+}
